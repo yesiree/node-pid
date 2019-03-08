@@ -10,12 +10,12 @@ npm i @yesiree/pid
 
 ## Usage
 
-### NodeJS
+**NodeJS**
 ```
 const Pid = require('@yesiree/pid')
 ```
 
-### Browser
+**Browser**
 ```
 
 ```
