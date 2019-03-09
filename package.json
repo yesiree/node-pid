@@ -1,0 +1,35 @@
+{
+  "name": "@yesiree/pid",
+  "version": "0.1.0",
+  "description": "A module for generating universally-unique, public IDs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine",
+    "deploy": "npm test && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yesiree/node-pid.git"
+  },
+  "keywords": [
+    "uuid",
+    "guid",
+    "small",
+    "compact",
+    "id",
+    "rfc4122"
+  ],
+  "author": "yesiree foundation",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yesiree/node-pid/issues"
+  },
+  "homepage": "https://github.com/yesiree/node-pid#readme",
+  "dependencies": {
+    "bignumber.js": "^8.1.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "jasmine": "^3.3.1"
+  }
+}
