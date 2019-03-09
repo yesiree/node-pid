@@ -12,12 +12,13 @@ npm i @yesiree/pid
 
 **NodeJS**
 ```
-const Pid = require('@yesiree/pid')
+const pid = require('@yesiree/pid')
+const p = pid.create()
 ```
 
 **Browser**
 ```
-
+pid.create()
 ```
 
 ## A brief explanation of purpose
