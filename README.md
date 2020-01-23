@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/yesiree/node-pid/workflows/Node%20CI/badge.svg)](https://github.com/yesiree/node-pid/actions)
+[![Actions Status](https://github.com/yesiree/node-pid/workflows/Build%2C%20Test%20%26%20Coverage/badge.svg)](https://github.com/yesiree/node-pid/actions)
 
 # PID
 
