@@ -1,5 +1,13 @@
 [![Actions Status](https://github.com/yesiree/node-pid/workflows/Build%2C%20Lint%2C%20Test%20%26%20100%25%20Coverage/badge.svg)](https://github.com/yesiree/node-pid/actions)
 
+[![GitHub license](https://img.shields.io/github/license/yesiree/node-pid)](https://github.com/yesiree/node-pid/blob/master/LICENSE)
+![npm version](https://img.shields.io/npm/v/@yesiree/pid)
+![npm downloads](https://img.shields.io/npm/dm/@yesiree/pid)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/@yesiree/pid)
+![npm dependencies](https://img.shields.io/librariesio/release/npm/@yesiree/pid)
+[![Issues](https://img.shields.io/github/issues/yesiree/node-pid)](https://github.com/yesiree/node-pid/issues)
+
+
 # PID
 
 > A module for generating universally-unique, _public_ IDs or *PIDs*
