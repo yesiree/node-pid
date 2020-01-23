@@ -9,11 +9,11 @@
   ],
   "scripts": {
     "build": "tsc",
-    "jasmine": "npm run build && jasmine",
+    "jasmine": "jasmine",
     "format": "prettier --write 'src/**/*.ts' 'src/**/*.js'",
     "lint": "tslint -p tsconfig.json",
     "coverage": "nyc npm run jasmine",
-    "test": "npm run coverage && npm run lint",
+    "test": "npm run build && npm run coverage && npm run lint",
     "prepublishOnly": "npm run test",
     "preversion": "npm run test",
     "version": "npm run format && git add -A src",
