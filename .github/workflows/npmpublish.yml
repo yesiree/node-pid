@@ -31,6 +31,8 @@ jobs:
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          GIT_COMMITTER_NAME: github-actions
+          EMAIL: github-actions@yesiree.org
 
 #  publish-gpr:
 #    needs: build
