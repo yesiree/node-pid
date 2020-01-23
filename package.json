@@ -16,8 +16,7 @@
     "test": "npm run build && npm run coverage && npm run lint",
     "prepublishOnly": "npm run test",
     "preversion": "npm run test",
-    "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags",
+    "version": "npm run format",
     "deploy": "tsc && npm run test && npm publish --access public"
   },
   "repository": {
