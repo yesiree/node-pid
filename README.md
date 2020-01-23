@@ -20,7 +20,7 @@ const p = createPid()
 
 ### createPid([uuid | config]) => string
 
-Creates a PID. Optionally, you can pass in a UUID and a base. If no UUID is provide, one will be generated. If no base is provided, base `64` is used. Passing in the same UUID and using the same base will always produce the same PID. This function is the most flexible way to generate a PID. ***However, for most use-cases, the `simplePid()` method described below is recommended.***
+Creates a PID. Optionally, you can pass in a UUID and a base. If no UUID is provide, one will be generated. If no base is provided, base `64` is used. Passing in the same UUID and using the same base will always produce the same PID. This function is the most flexible way to generate a PID. ***However, for most use-cases, the [`simplePid()`](#simplepid--string) method described below is recommended.***
 
 **Parameters**
 
