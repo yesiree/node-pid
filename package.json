@@ -4,18 +4,20 @@
   "description": "A module for generating universally-unique, public IDs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "jasmine",
     "format": "prettier --write 'src/**/*.ts' 'src/**/*.js'",
     "lint": "tslint -p tsconfig.json",
-    "checks": "npm test && npm run lint",
-    "travis": "npm run build && npm checks",
+    "checks": "npm run test && npm run lint",
+    "travis": "npm run build && npm run checks",
     "prepublishOnly": "npm run checks",
     "preversion": "npm run checks",
-    "version" : "npm run format && git add -A src",
-    "postversion" : "git push && git push --tags",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags",
     "deploy": "tsc && npm run checks && npm publish --access public"
   },
   "repository": {
