@@ -50,3 +50,8 @@ export const toUuid = (pid: string, base: number) => {
 
 export const compact = () => create({ base: 64 })
 export const simple = () => create({ base: 36 })
+
+export const createPid = create
+export const compactPid = compact
+export const simplePid = simple
+export const pidToUuid = toUuid
