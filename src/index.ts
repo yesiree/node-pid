@@ -16,14 +16,11 @@ export const create = (uuidOrConfig?: string | PidConfig) => {
     ? typeof uuidOrConfig === 'string'
       ? uuidOrConfig
       : uuidOrConfig.uuid || uuidv4()
-    : uuidv4())
-      .replace(/-/g, '')
-      .toLowerCase()
-  const base = uuidOrConfig
-    ? typeof uuidOrConfig === 'string'
-      ? 64
-      : uuidOrConfig.base || 64
-    : 64
+    : uuidv4()
+  )
+    .replace(/-/g, '')
+    .toLowerCase()
+  const base = uuidOrConfig ? (typeof uuidOrConfig === 'string' ? 64 : uuidOrConfig.base || 64) : 64
 
   if (base > ALPHABET.length) {
     throw new Error(`Invalid base: ${base}. Must be between 2 and ${ALPHABET.length}.`)
@@ -34,7 +31,7 @@ export const create = (uuidOrConfig?: string | PidConfig) => {
     .padStart(computeLengthFromBase(base), '0')
 }
 
-export const computeLengthFromBase = (base: number) : number => {
+export const computeLengthFromBase = (base: number): number => {
   return Math.ceil(Math.log(Math.pow(16, 32)) / Math.log(base))
 }
 

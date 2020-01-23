@@ -7,7 +7,7 @@
   "files": ["lib/**/*"],
   "scripts": {
     "build": "tsc",
-    "test": "npm run build && jasmine",
+    "test": "jasmine",
     "checks": "npm test && npm run lint",
     "format": "prettier --write 'src/**/*.ts' 'src/**/*.js'",
     "lint": "tslint -p tsconfig.json",
@@ -15,9 +15,7 @@
     "preversion": "npm run checks",
     "version" : "npm run format && git add -A src",
     "postversion" : "git push && git push --tags",
-
-
-    "deploy": "tsc && npm test && npm publish --access public"
+    "deploy": "tsc && npm run checks && npm publish --access public"
   },
   "repository": {
     "type": "git",
