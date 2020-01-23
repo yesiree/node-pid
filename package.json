@@ -8,9 +8,10 @@
   "scripts": {
     "build": "tsc",
     "test": "jasmine",
-    "checks": "npm test && npm run lint",
     "format": "prettier --write 'src/**/*.ts' 'src/**/*.js'",
     "lint": "tslint -p tsconfig.json",
+    "checks": "npm test && npm run lint",
+    "travis": "npm run build && npm checks",
     "prepublishOnly": "npm run checks",
     "preversion": "npm run checks",
     "version" : "npm run format && git add -A src",
