@@ -1,26 +1,18 @@
-name: Build, Test & Coverage
-
+name: Build, Lint, Test & 100% Coverage
 on:
   pull_request:
     branches:
       - master
-
 jobs:
-  build:
-
+  checks:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [12.x]
-
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js 12.x
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
+        node-version: 12.x
+    - name: npm ci, npm test
       run: |
         npm ci
         npm test
