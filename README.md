@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/yesiree/node-pid.svg?branch=master)](https://travis-ci.org/yesiree/node-pid)
+
 # PID
 
 > A module for generating universally-unique, _public_ IDs or *PIDs*
