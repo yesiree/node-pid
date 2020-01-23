@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/yesiree/node-pid.svg?branch=master)](https://travis-ci.org/yesiree/node-pid)
-[![Coverage Status](https://coveralls.io/repos/github/yesiree/node-pid/badge.svg?branch=master)](https://coveralls.io/github/yesiree/node-pid?branch=master)
+[![Actions Status](https://github.com/yesiree/node-pid/workflows/Node%20CI/badge.svg)](https://github.com/yesiree/node-pid/actions)
 
 # PID
 
