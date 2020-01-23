@@ -1,5 +1,5 @@
 describe('Pid', () => {
-  const { create, compact, simple, toUuid, computeLengthFromBase } = require('../index')
+  const { create, compact, simple, toUuid, computeLengthFromBase } = require('../lib/index')
 
   beforeEach(function () {
 
@@ -59,6 +59,38 @@ describe('Pid', () => {
         expect(pid).toEqual(inverse)
       })
     })
+  })
+
+  it(`should be able to call 'compact' and get a pid with length 22`, () => {
+    const uuids = [
+      'ffffffff-ffff-ffff-ffff-ffffffffffff',
+      '00000000-0000-0000-0000-000000000000',
+      '528f4e50-1f26-4067-8c9d-8475a0da3e16',
+      '275c7d5b-ec7b-4a04-afe0-00e7602747e2',
+      'e84d040d-5260-4646-bda3-56161f62525e',
+      '52cf29d6-2b61-4c9d-abaf-9d1e7d676acd',
+      'f0f64bda-9afe-4443-a0aa-a74298a1e4d1',
+      'a20a37aa-6a2d-47b3-ad77-56a289e52a8a',
+      'd927d185-2214-4782-8699-6abb136880af',
+      '1e17729d-3fdd-4bec-8562-d514da77cff5'
+    ]
+    uuids.forEach(uuid => expect(compact(uuid).length).toEqual(22))
+  })
+
+  it(`should be able to call 'simple' and get a pid with length 25`, () => {
+    const uuids = [
+      'ffffffff-ffff-ffff-ffff-ffffffffffff',
+      '00000000-0000-0000-0000-000000000000',
+      '528f4e50-1f26-4067-8c9d-8475a0da3e16',
+      '275c7d5b-ec7b-4a04-afe0-00e7602747e2',
+      'e84d040d-5260-4646-bda3-56161f62525e',
+      '52cf29d6-2b61-4c9d-abaf-9d1e7d676acd',
+      'f0f64bda-9afe-4443-a0aa-a74298a1e4d1',
+      'a20a37aa-6a2d-47b3-ad77-56a289e52a8a',
+      'd927d185-2214-4782-8699-6abb136880af',
+      '1e17729d-3fdd-4bec-8562-d514da77cff5'
+    ]
+    uuids.forEach(uuid => expect(simple(uuid).length).toEqual(25))
   })
 
 })

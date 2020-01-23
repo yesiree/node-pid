@@ -2,10 +2,22 @@
   "name": "@yesiree/pid",
   "version": "0.1.1",
   "description": "A module for generating universally-unique, public IDs",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": ["lib/**/*"],
   "scripts": {
-    "test": "jasmine",
-    "deploy": "npm test && npm publish --access public"
+    "build": "tsc",
+    "test": "npm run build && jasmine",
+    "checks": "npm test && npm run lint",
+    "format": "prettier --write 'src/**/*.ts' 'src/**/*.js'",
+    "lint": "tslint -p tsconfig.json",
+    "prepublishOnly": "npm run checks",
+    "preversion": "npm run checks",
+    "version" : "npm run format && git add -A src",
+    "postversion" : "git push && git push --tags",
+
+
+    "deploy": "tsc && npm test && npm publish --access public"
   },
   "repository": {
     "type": "git",
@@ -17,6 +29,7 @@
     "small",
     "compact",
     "id",
+    "pid",
     "rfc4122"
   ],
   "author": "yesiree foundation",
@@ -26,10 +39,16 @@
   },
   "homepage": "https://github.com/yesiree/node-pid#readme",
   "dependencies": {
-    "bignumber.js": "^8.1.1",
-    "uuid": "^3.3.2"
+    "big-integer": "^1.6.48",
+    "uuid": "^3.4.0"
   },
   "devDependencies": {
-    "jasmine": "^3.3.1"
+    "@types/big-integer": "0.0.31",
+    "@types/uuid": "^3.4.6",
+    "jasmine": "^3.5.0",
+    "prettier": "^1.19.1",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.5"
   }
 }
