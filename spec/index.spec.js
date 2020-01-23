@@ -133,21 +133,21 @@ describe('Pid', () => {
       pidToUuid()
     }).toThrowError(`Must provide non-empty string for pid parameter. Found 'undefined' (undefined).`)
 
-    // expect(() => {
-    //   pidToUuid('')
-    // }).toThrowError(`Must provide non-empty string for pid parameter. Found '' (string).`)
+    expect(() => {
+      pidToUuid('')
+    }).toThrowError(`Must provide non-empty string for pid parameter. Found '' (string).`)
 
-    // expect(() => {
-    //   pidToUuid('abcd123efgh456ijkl789mnop')
-    // }).toThrowError(`Must provide number between 2 and 64 for base parameter. Found 'undefined'.`)
+    expect(() => {
+      pidToUuid('abcd123efgh456ijkl789mnop')
+    }).toThrowError(`Must provide number between 2 and 64 for base parameter. Found 'undefined'.`)
 
-    // // expect(() => {
-    // //   pidToUuid('abcd123efgh456ijkl789mnop', 1)
-    // // }).toThrowError(`Must provide number between 2 and 64 for base parameter. Found '1'.`)
+    expect(() => {
+      pidToUuid('abcd123efgh456ijkl789mnop', 1)
+    }).toThrowError(`Must provide number between 2 and 64 for base parameter. Found '1'.`)
 
-    // // expect(() => {
-    // //   pidToUuid('abcd123efgh456ijkl789mnop', 65)
-    // // }).toThrowError(`Must provide number between 2 and 64 for base parameter. Found '65'.`)
+    expect(() => {
+      pidToUuid('abcd123efgh456ijkl789mnop', 65)
+    }).toThrowError(`Must provide number between 2 and 64 for base parameter. Found '65'.`)
 
   })
 
