@@ -9,16 +9,16 @@
   ],
   "scripts": {
     "build": "tsc",
-    "test": "npm run build && jasmine",
+    "jasmine": "npm run build && jasmine",
     "format": "prettier --write 'src/**/*.ts' 'src/**/*.js'",
     "lint": "tslint -p tsconfig.json",
-    "coverage": "nyc npm run test",
-    "checks": "npm run coverage && npm run lint",
-    "prepublishOnly": "npm run checks",
-    "preversion": "npm run checks",
+    "coverage": "nyc npm run jasmine",
+    "test": "npm run coverage && npm run lint",
+    "prepublishOnly": "npm run test",
+    "preversion": "npm run test",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags",
-    "deploy": "tsc && npm run checks && npm publish --access public"
+    "deploy": "tsc && npm run test && npm publish --access public"
   },
   "repository": {
     "type": "git",
