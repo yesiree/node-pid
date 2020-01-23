@@ -1,6 +1,6 @@
 # PID
 
-> A module for generating universally-unique, _public_ IDs
+> A module for generating universally-unique, _public_ IDs or *PIDs*
 
 ## Installation
 
@@ -11,9 +11,12 @@ npm i @yesiree/pid
 ## Usage
 
 **NodeJS**
-```
-const { createPid } = require('@yesiree/pid')
-const p = createPid()
+```javascript
+const { simplePid } = require('@yesiree/pid')
+
+const pid = simplePid()
+
+console.log(pid) // Outputs something like `dxu50ozbj4obelaop470y791v`
 ```
 
 ## API
