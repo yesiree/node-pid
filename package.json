@@ -13,11 +13,7 @@
     "format": "prettier --write 'src/**/*.ts' 'src/**/*.js'",
     "lint": "tslint -p tsconfig.json",
     "coverage": "nyc npm run jasmine",
-    "test": "npm run build && npm run coverage && npm run lint",
-    "prepublishOnly": "npm run test",
-    "preversion": "npm run test",
-    "version": "npm run format",
-    "deploy": "tsc && npm run test && npm publish --access public"
+    "test": "npm run build && npm run coverage && npm run lint"
   },
   "repository": {
     "type": "git",
