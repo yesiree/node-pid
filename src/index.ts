@@ -22,7 +22,7 @@ export const create = (uuidOrConfig?: string | PidConfig) => {
     .toLowerCase()
   const base = uuidOrConfig ? (typeof uuidOrConfig === 'string' ? 64 : uuidOrConfig.base || 64) : 64
 
-  if (base > ALPHABET.length) {
+  if (base > ALPHABET.length || base < 2) {
     throw new Error(`Invalid base: ${base}. Must be between 2 and ${ALPHABET.length}.`)
   }
 
