@@ -36,7 +36,6 @@
   "homepage": "https://github.com/yesiree/node-pid#readme",
   "dependencies": {
     "big-integer": "^1.6.48",
-    "nyc": "^15.0.1",
     "uuid": "^3.4.0"
   },
   "devDependencies": {
@@ -44,6 +43,7 @@
     "@types/uuid": "^3.4.9",
     "coveralls": "^3.1.0",
     "jasmine": "^3.5.0",
+    "nyc": "^15.0.1",
     "prettier": "^1.19.1",
     "tslint": "^6.1.2",
     "tslint-config-prettier": "^1.18.0",
