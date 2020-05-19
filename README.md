@@ -10,15 +10,13 @@
 
 # PID
 
-> A module for generating universally-unique, _public_ IDs or *PIDs*
-
-This module generates IDs with the same level of uniqueness as UUIDs (version 4 of [RFC4122](https://www.ietf.org/rfc/rfc4122.txt)), but shorter, and, by default, without hyphens. This makes them a better fit for URL parameters and other places where IDs will be visible to the end-user.
+This module generates IDs with the same level of uniqueness as UUIDs (version 4 of [RFC4122](https://www.ietf.org/rfc/rfc4122.txt)), but shorter, and, by default, without hyphens. This makes them a better fit for URL parameters and other places where IDs will be visible or _public_ to the end-user, hence public ID or `PID`.
 
 Here's an example of the difference between a `PID` and a `UUID`:
 
-```
-2uiLXlsQx4BWVAVtqN1QDj // PID
-e7a717df-3b31-46f6-bd56-cba1d6c5febf // UUID
+```javascript
+'2uiLXlsQx4BWVAVtqN1QDj' // PID
+'e7a717df-3b31-46f6-bd56-cba1d6c5febf' // UUID
 ```
 
 ## Installation
