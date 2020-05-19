@@ -12,6 +12,13 @@
 
 > A module for generating universally-unique, _public_ IDs or *PIDs*
 
+This module generates IDs with the same level of uniqueness as UUIDs (version 4 of [RFC4122](https://www.ietf.org/rfc/rfc4122.txt)), but shorter. This makes them a better fit for URL parameters and other places where IDs will be visible to the end-user.
+
+```
+2uiLXlsQx4BWVAVtqN1QDj
+e7a717df-3b31-46f6-bd56-cba1d6c5febf
+```
+
 ## Installation
 
 ```
@@ -85,7 +92,7 @@ The alphabet used to generate all PIDs is:
 
 The base chosen when creating a PID determines the subset of this alphabet used to generate that PID. For example, base 2 uses `0` and `1` as the alphabet; base 10 uses the digits `0` through `9`; base 32 uses `0` through `9` and `a` through `z`. The maximum base (base 64) uses `0` through `9`, `a` through `z` (lower case letters), `A` through `Z` (upper case letters) as well as `-` and `_`.
 
-## A brief explanation of purpose
+## A longer explanation of purpose
 
 When multiple systems exchange data (such as a public API), it's often necessary to have unique IDs with which to identify that data. Sharing IDs generated in and used internally by a database is usually a bad idea. If the storage mechanism needs to change, the IDs may neeed to change as well. This would require that any system consuming that data would also have to update all references to those IDs. If these systems exist within different organizations, this may not be feasible. Even if the systems exist within the same organization, the effort required to make these changes could be enormous.
 
