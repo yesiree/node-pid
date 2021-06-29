@@ -2,7 +2,7 @@ name: Build, Lint, Test & Coverage
 on:
   pull_request:
     branches:
-      - release
+      - master
 jobs:
   checks:
     runs-on: ubuntu-latest
