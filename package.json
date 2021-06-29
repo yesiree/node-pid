@@ -14,7 +14,7 @@
     "lint": "tslint -p tsconfig.json",
     "coverage": "nyc npm run jasmine",
     "report-coverage": "nyc report --reporter=text-lcov > .ignore/coverage.lcov && codecov --disable=gcov",
-    "test": "npm run build && npm run coverage && npm run lint"
+    "test": "npm run build && npm run lint && npm run coverage"
   },
   "repository": {
     "type": "git",
