@@ -1,4 +1,4 @@
-
+.ignore/
 /lib
 .DS_Store
 logs
@@ -6,7 +6,4 @@ logs
 npm-debug.log*
 .npm
 node_modules/
-.nyc_output/
-
-# Output of 'npm pack'
 *.tgz

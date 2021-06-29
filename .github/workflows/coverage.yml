@@ -1,0 +1,24 @@
+name: Report coverage
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - name: npm ci, npm test
+      run: |
+        npm ci
+        npm run coverage
+        - uses: codecov/codecov-action@v1
+      with:
+        files: .ignore/coverage.lcov
+        fail_ci_if_error: false # optional (default = false)
+        verbose: true # optional (default = false)
