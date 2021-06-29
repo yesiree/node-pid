@@ -1,11 +1,26 @@
-[![Actions Status](https://github.com/yesiree/node-pid/workflows/Build%2C%20Lint%2C%20Test%20%26%20100%25%20Coverage/badge.svg)](https://github.com/yesiree/node-pid/actions)
+[![Checks](https://github.com/yesiree/node-pid/actions/workflows/checks.yml/badge.svg)](https://github.com/yesiree/node-pid/actions)
 
-[![GitHub license](https://img.shields.io/github/license/yesiree/node-pid)](https://github.com/yesiree/node-pid/blob/master/LICENSE)
-![npm version](https://img.shields.io/npm/v/@yesiree/pid)
-![npm downloads](https://img.shields.io/npm/dm/@yesiree/pid)
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/@yesiree/pid)
-![npm dependencies](https://img.shields.io/librariesio/release/npm/@yesiree/pid)
-[![Issues](https://img.shields.io/github/issues/yesiree/node-pid)](https://github.com/yesiree/node-pid/issues)
+![Checks](https://badgen.net/github/checks/yesiree/node-pid)
+
+![Status](https://badgen.net/github/status/yesiree/node-pid)
+
+[![License](https://badgen.net/github/license/yesiree/node-pid)](https://github.com/yesiree/node-pid/blob/master/LICENSE)
+
+![Release](https://badgen.net/github/release/yesiree/node-pid/stable)
+
+![Open Issues](https://badgen.net/github/open-issues/yesiree/node-pid)
+
+![Last Commit](https://badgen.net/github/last-commit/yesiree/node-pid)
+
+![Contributors](https://badgen.net/github/contributors/yesiree/node-pid)
+
+![NPM Version](https://badgen.net/npm/v/@yesiree/pid)
+
+![NPM Downloads](https://badgen.net/npm/dm/@yesiree/pid)
+
+![Dependencies](https://badgen.net/david/dep/yesiree/node-pid)
+
+![Published Size](https://badgen.net/packagephobia/publish/@yesiree/pid)
 
 
 # PID
