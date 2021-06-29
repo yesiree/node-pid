@@ -1,4 +1,4 @@
-name: Build
+name: Test
 on:
   pull_request:
     branches:
@@ -12,7 +12,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
-    - name: tsc (build)
+    - name: jasmine (test)
       run: |
         npm ci
-        npm run build
+        npm run jasmine
