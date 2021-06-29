@@ -10,7 +10,7 @@
 
 ![npm dependencies](https://img.shields.io/librariesio/release/npm/@yesiree/pid)
 
-![tree shaking](https://badgen.net/bundlephobia/tree-shaking/react-colorful)
+![tree shaking](https://badgen.net/bundlephobia/tree-shaking/@yesiree/pid)
 
 [![Issues](https://img.shields.io/github/issues/yesiree/node-pid)](https://github.com/yesiree/node-pid/issues)
 
