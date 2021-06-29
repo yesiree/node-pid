@@ -1,4 +1,4 @@
-# PID
+# PID!
 
 This module generates IDs with the same level of uniqueness as UUIDs (version 4 of [RFC4122](https://www.ietf.org/rfc/rfc4122.txt)), but shorter, and, by default, without hyphens. This makes them a better fit for URL parameters and other places where IDs will be visible or _public_ to the end-user, hence public ID or `PID`.
 
