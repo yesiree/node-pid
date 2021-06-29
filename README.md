@@ -12,14 +12,23 @@ Here's an example of the difference between a `PID` and a `UUID`:
 ---
 
 [![Checks](https://github.com/yesiree/node-pid/actions/workflows/checks.yml/badge.svg)](https://github.com/yesiree/node-pid/actions)
+
 [![Coverage](https://codecov.io/gh/yesiree/node-pid/branch/release/graph/badge.svg?token=P0VI8HHQ0W)](https://codecov.io/gh/yesiree/node-pid)
+
 [![License](https://badgen.net/github/license/yesiree/node-pid)](https://github.com/yesiree/node-pid/blob/master/LICENSE)
+
 ![Release](https://badgen.net/github/release/yesiree/node-pid/stable)
+
 ![Contributors](https://badgen.net/github/contributors/yesiree/node-pid)
+
 ![NPM Downloads](https://badgen.net/npm/dm/@yesiree/pid)
+
 ![Last Commit](https://badgen.net/github/last-commit/yesiree/node-pid/release)
+
 ![Open Issues](https://badgen.net/github/open-issues/yesiree/node-pid)
+
 ![Dependencies](https://badgen.net/david/dep/yesiree/node-pid)
+
 ![Published Size](https://badgen.net/packagephobia/publish/@yesiree/pid)
 
 ---
