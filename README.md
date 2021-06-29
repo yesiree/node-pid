@@ -22,19 +22,6 @@
 
 ![Published Size](https://badgen.net/packagephobia/publish/@yesiree/pid)
 
-***
-
-
-![npm downloads](https://img.shields.io/npm/dm/@yesiree/pid)
-
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/@yesiree/pid)
-
-![npm dependencies](https://img.shields.io/librariesio/release/npm/@yesiree/pid)
-
-![size](https://badgen.net/packagephobia/install/@yesiree/pid)
-
-[![Issues](https://img.shields.io/github/issues/yesiree/node-pid)](https://github.com/yesiree/node-pid/issues)
-
 
 # PID
 
