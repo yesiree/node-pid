@@ -10,7 +10,7 @@
 
 ![npm dependencies](https://img.shields.io/librariesio/release/npm/@yesiree/pid)
 
-![size](https://badgen.net/bundlephobia/min/@yesiree/pid)
+![size](https://badgen.net/packagephobia/install/@yesiree/pid)
 
 [![Issues](https://img.shields.io/github/issues/yesiree/node-pid)](https://github.com/yesiree/node-pid/issues)
 
