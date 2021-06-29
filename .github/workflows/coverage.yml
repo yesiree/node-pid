@@ -20,7 +20,7 @@ jobs:
       run: |
         npm ci
         npm test
-        - uses: codecov/codecov-action@v1
+    - uses: codecov/codecov-action@v1
       with:
         files: .ignore/coverage.lcov
         fail_ci_if_error: true # optional (default = false)
