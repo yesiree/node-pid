@@ -1,9 +1,6 @@
 name: Report coverage
 
 on:
-  pull_request:
-    branches:
-      - release
   release:
     types: [created]
 

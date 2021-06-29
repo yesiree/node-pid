@@ -13,8 +13,8 @@
     "format": "prettier --write 'src/**/*.ts' 'src/**/*.js'",
     "lint": "tslint -p tsconfig.json",
     "coverage": "nyc npm run jasmine && nyc report --reporter=text-lcov > .ignore/coverage.lcov",
-    "report-coverage": "nyc report --reporter=text-lcov > .ignore/coverage.lcov && codecov --disable=gcov",
-    "test": "npm run build && npm run lint && npm run coverage"
+    "test": "npm run build && npm run lint && npm run coverage",
+    "--report-coverage": "nyc report --reporter=text-lcov > .ignore/coverage.lcov && codecov --disable=gcov"
   },
   "repository": {
     "type": "git",
