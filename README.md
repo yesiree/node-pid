@@ -1,30 +1,3 @@
-[![Checks](https://github.com/yesiree/node-pid/actions/workflows/checks.yml/badge.svg)](https://github.com/yesiree/node-pid/actions)
-
-![Checks](https://badgen.net/github/checks/yesiree/node-pid)
-
-![Status](https://badgen.net/github/status/yesiree/node-pid)
-
-![Coverage](https://codecov.io/gh/yesiree/node-pid/branch/release/graph/badge.svg?token=P0VI8HHQ0W)
-
-[![License](https://badgen.net/github/license/yesiree/node-pid)](https://github.com/yesiree/node-pid/blob/master/LICENSE)
-
-![Release](https://badgen.net/github/release/yesiree/node-pid/stable)
-
-![Open Issues](https://badgen.net/github/open-issues/yesiree/node-pid)
-
-![Last Commit](https://badgen.net/github/last-commit/yesiree/node-pid)
-
-![Contributors](https://badgen.net/github/contributors/yesiree/node-pid)
-
-![NPM Version](https://badgen.net/npm/v/@yesiree/pid)
-
-![NPM Downloads](https://badgen.net/npm/dm/@yesiree/pid)
-
-![Dependencies](https://badgen.net/david/dep/yesiree/node-pid)
-
-![Published Size](https://badgen.net/packagephobia/publish/@yesiree/pid)
-
-
 # PID
 
 This module generates IDs with the same level of uniqueness as UUIDs (version 4 of [RFC4122](https://www.ietf.org/rfc/rfc4122.txt)), but shorter, and, by default, without hyphens. This makes them a better fit for URL parameters and other places where IDs will be visible or _public_ to the end-user, hence public ID or `PID`.
@@ -35,6 +8,21 @@ Here's an example of the difference between a `PID` and a `UUID`:
 '2uiLXlsQx4BWVAVtqN1QDj' // PID
 'e7a717df-3b31-46f6-bd56-cba1d6c5febf' // UUID
 ```
+
+---
+
+[![Checks](https://github.com/yesiree/node-pid/actions/workflows/checks.yml/badge.svg)](https://github.com/yesiree/node-pid/actions)
+[![Coverage](https://codecov.io/gh/yesiree/node-pid/branch/release/graph/badge.svg?token=P0VI8HHQ0W)](https://codecov.io/gh/yesiree/node-pid)
+[![License](https://badgen.net/github/license/yesiree/node-pid)](https://github.com/yesiree/node-pid/blob/master/LICENSE)
+![Release](https://badgen.net/github/release/yesiree/node-pid/stable)
+![Contributors](https://badgen.net/github/contributors/yesiree/node-pid)
+![NPM Downloads](https://badgen.net/npm/dm/@yesiree/pid)
+![Last Commit](https://badgen.net/github/last-commit/yesiree/node-pid/release)
+![Open Issues](https://badgen.net/github/open-issues/yesiree/node-pid)
+![Dependencies](https://badgen.net/david/dep/yesiree/node-pid)
+![Published Size](https://badgen.net/packagephobia/publish/@yesiree/pid)
+
+---
 
 ## Installation
 
