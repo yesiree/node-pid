@@ -4,7 +4,7 @@
 
 ![Status](https://badgen.net/github/status/yesiree/node-pid)
 
-![Coverage](https://badgen.net/codecov/c/github/yesiree/node-pid)
+![Coverage](https://codecov.io/gh/yesiree/node-pid/branch/release/graph/badge.svg?token=P0VI8HHQ0W)
 
 [![License](https://badgen.net/github/license/yesiree/node-pid)](https://github.com/yesiree/node-pid/blob/master/LICENSE)
 
