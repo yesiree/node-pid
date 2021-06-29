@@ -1,4 +1,4 @@
-[![Checks](https://github.com/yesiree/node-pid/actions/workflows/build.yml/badge.svg)](https://github.com/yesiree/node-pid/actions)
+[![Checks](https://github.com/yesiree/node-pid/actions/workflows/checks.yml/badge.svg)](https://github.com/yesiree/node-pid/actions)
 
 ![Checks](https://badgen.net/github/checks/yesiree/node-pid)
 
