@@ -2,6 +2,8 @@
 
 [![Actions Status](https://github.com/yesiree/node-pid/workflows/build.yml/badge.svg)](https://github.com/yesiree/node-pid/actions)
 
+[![example workflow](https://github.com/yesiree/node-pid/actions/workflows/build.yml/badge.svg)](https://github.com/yesiree/node-pid/actions)
+
 ![Checks](https://badgen.net/github/checks/yesiree/node-pid)
 
 ![Status](https://badgen.net/github/status/yesiree/node-pid)
