@@ -12,9 +12,9 @@
     "jasmine": "jasmine",
     "format": "prettier --write 'src/**/*.ts' 'src/**/*.js'",
     "lint": "tslint -p tsconfig.json",
-    "coverage": "nyc npm run jasmine",
-    "report-coverage": "nyc report --reporter=text-lcov > .ignore/coverage.lcov && codecov --disable=gcov",
-    "test": "npm run build && npm run coverage && npm run lint"
+    "coverage": "nyc npm run jasmine && nyc report --reporter=text-lcov > .ignore/coverage.lcov",
+    "test": "npm run build && npm run lint && npm run coverage",
+    "--report-coverage": "nyc report --reporter=text-lcov > .ignore/coverage.lcov && codecov --disable=gcov"
   },
   "repository": {
     "type": "git",
