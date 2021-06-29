@@ -4,7 +4,7 @@
 
 ![Status](https://badgen.net/github/status/yesiree/node-pid)
 
-[![GitHub license](https://img.shields.io/github/license/yesiree/node-pid)](https://github.com/yesiree/node-pid/blob/master/LICENSE)
+[![License](https://badgen.net/github/license/yesiree/node-pid)](https://github.com/yesiree/node-pid/blob/master/LICENSE)
 
 ![Release](https://badgen.net/github/release/yesiree/node-pid/stable)
 
