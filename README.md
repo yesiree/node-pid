@@ -1,8 +1,4 @@
-[![Actions Status](https://github.com/yesiree/node-pid/workflows/Build%2C%20Lint%2C%20Test%20%26%20100%25%20Coverage/badge.svg)](https://github.com/yesiree/node-pid/actions)
-
-[![Actions Status](https://github.com/yesiree/node-pid/workflows/build.yml/badge.svg)](https://github.com/yesiree/node-pid/actions)
-
-[![example workflow](https://github.com/yesiree/node-pid/actions/workflows/build.yml/badge.svg)](https://github.com/yesiree/node-pid/actions)
+[![Checks](https://github.com/yesiree/node-pid/actions/workflows/build.yml/badge.svg)](https://github.com/yesiree/node-pid/actions)
 
 ![Checks](https://badgen.net/github/checks/yesiree/node-pid)
 
