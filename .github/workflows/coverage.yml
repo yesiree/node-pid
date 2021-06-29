@@ -13,12 +13,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
-    - name: npm ci, npm test
+    - name: coverage
       run: |
         npm ci
-        npm run coverage
-        - uses: codecov/codecov-action@v1
+        npm test
+    - uses: codecov/codecov-action@v1
       with:
         files: .ignore/coverage.lcov
-        fail_ci_if_error: false # optional (default = false)
+        fail_ci_if_error: true # optional (default = false)
         verbose: true # optional (default = false)
