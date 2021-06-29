@@ -1,4 +1,4 @@
-name: Build, Lint, Test & Coverage
+name: Build, Lint, & Test
 on:
   pull_request:
     branches:
